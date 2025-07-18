@@ -1,0 +1,17 @@
+- id: custom-pre-commit
+  name: Custom Pre-commit Script
+  entry: hooks/pre-commit
+  language: script
+  stages: [commit]
+
+- id: custom-pre-push
+  name: Custom Pre-push Script
+  entry: hooks/pre-push
+  language: script
+  stages: [push]
+
+- id: custom-commit-msg
+  name: Custom Commit-msg Script
+  entry: hooks/commit-msg
+  language: script
+  stages: [commit-msg]
